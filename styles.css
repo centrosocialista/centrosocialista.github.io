@@ -55,7 +55,8 @@ header.masthead.landing-hero {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: var(--wine);
+    background: linear-gradient(rgba(118, 19, 30, 0.78), rgba(118, 19, 30, 0.78)),
+        url("assets/img/centro-socialista-bg.jpg") center center / cover no-repeat;
     color: #fff;
 }
 
