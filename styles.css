@@ -52,16 +52,24 @@ body {
 }
 
 header.masthead.landing-hero {
+    position: relative;
+    isolation: isolate;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(rgba(118, 19, 30, 0.78), rgba(118, 19, 30, 0.78)),
-        url("assets/img/centro-socialista-bg.jpg") center center / cover no-repeat;
+    background: var(--wine);
     color: #fff;
 }
 
 header.masthead.landing-hero::before {
-    display: none;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    display: block;
+    content: "";
+    background: linear-gradient(rgba(118, 19, 30, 0.78), rgba(118, 19, 30, 0.78)),
+        url("assets/img/centro-socialista-bg.jpg") center center / cover no-repeat;
+    transform: scaleX(-1);
 }
 
 .landing-hero .row {
